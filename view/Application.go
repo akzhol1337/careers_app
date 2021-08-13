@@ -5,10 +5,15 @@ import (
 	_ "database/sql"
 	_ "fmt"
 	"github.com/gorilla/mux"
+	"net/http"
 	_ "net/http"
 )
 
 func HandleFunc(){
 	route := mux.NewRouter()
 	route.HandleFunc("/", controller.Index).Methods("GET")
+
+	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("./static/"))))
+	http.Handle("/", route)
+	http.ListenAndServe(":8080", nil)
 }

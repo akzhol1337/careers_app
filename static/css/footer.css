@@ -1,0 +1,11 @@
+footer {
+    height: 15vh;
+    text-align: center;
+    background-color: #48dbfb;
+}
+
+footer p {
+    height: auto;
+    padding: 5vh;
+    color: white;
+}

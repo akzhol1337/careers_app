@@ -1,0 +1,36 @@
+body {
+    background-color: white;
+}
+
+main {
+    height: 65vh;
+}
+
+.welcome_box {
+    margin-top: 20vh;
+    margin-left: 5vw;
+    color: black;
+}
+
+.welcome_box h2 {
+    font-size: 50px;
+}
+
+.welcome_box h3 {
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.welcome_box {
+    display: flex;
+}
+
+.welcome_box img {
+    width: 370px;
+    height: 370PX;
+    margin-left: 15vw;
+}
+
+.welcome_text {
+    margin-top: 15vh;
+}
