@@ -1,0 +1,28 @@
+{{define "register_company"}}
+
+{{template "header"}}
+
+<main>
+    <div class="form">
+        <form>
+            <input type="text" name="name" id="name" placeholder="name of company"><br>
+            <input type="number" name="numberOfEmployees" id="numberOfEmployees" placeholder="number of employees"><br>
+            <select name="type" id="type">
+                <option value="test">test</option>
+                <option value="test1">test1</option>
+                <option value="test2">test2</option>
+                <option value="test3">test3</option>
+            </select><br>
+            <input type="password" name="pass" id="pass" placeholder="Create a password"><br>
+
+
+            <input type="text" name="subdomain" id="subdomain" placeholder="Create a subdomain"><br>
+
+            <button>Register</button>
+        </form>
+    </div>
+</main>
+
+{{template "footer"}}
+
+{{ end }}

@@ -12,6 +12,7 @@ import (
 func HandleFunc(){
 	route := mux.NewRouter()
 	route.HandleFunc("/", controller.Index).Methods("GET")
+	route.HandleFunc("/register", controller.RegisterCompany).Methods("GET")
 
 	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("./static/"))))
 	http.Handle("/", route)
